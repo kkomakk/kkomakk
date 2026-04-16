@@ -32,7 +32,7 @@
     - Python 기반 GPT 모델 연동을 통한 그림·음성 데이터 분석 및 자동 리포트 생성 기능 구현
     - AWS 기반 전체 서비스 배포 및 사용자 행동 이벤트 시각화 시스템 구축
 
-#### 📍 **EZ-FillStack (Back-end Architecture)**
+#### 📍 **E.GO (Back-end Architecture)**
 * **설명**: 공공데이터(Tour API) 연동 기반 행사 예약 및 관리 통합 플랫폼
 * **주요 역할**: 백엔드 도메인 설계 및 동시성 제어 로직 구축
 * **Key Achievement**: 
