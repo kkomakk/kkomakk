@@ -2,70 +2,75 @@
 
 ![snake gif](https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg)
 
-<h1 align="center">안녕하세요, 시스템 설계와 데이터 정합성을 주도하는 리더형 개발자 이지수입니다 👋</h1>
-<h3 align="center">단순한 코드 구현을 넘어 서비스의 뼈대(ERD)를 설계하고, 150명의 조직을 이끈 리더십으로 팀의 병목을 해결합니다.</h3>
+<h1 align="center">안녕하세요, 정직한 숫자로 가치를 증명하는 백엔드 개발자 이지수입니다 👋</h1>
+<h3 align="center">복잡한 비즈니스 로직을 견고한 데이터 아키텍처로 변환하며, 아키텍처 최적화와 정합성 검증을 집요하게 반복합니다.[cite: 4]</h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white"/>
   <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Apache%20Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white"/>
   <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.dot.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
 </p>
 
 ---
 
-### 💻 Core Capabilities
-* **Technical PM/PL Architecture**: 프론트엔드와 백엔드 전체를 조망하는 풀스택 파이프라인 총괄 및 프로젝트 리딩
-* **Data-Centric Design**: 도메인 분석을 통한 정교한 **ERD 설계 및 SQL 아키텍처링**, 데이터 무결성을 위한 트랜잭션 정책 수립
-* **Strategic Management**: WBS 기반의 정밀 공정 관리로 개발 지연 리스크 제로화, 조직 운영 자동화 시스템 구축
-* **AI & Multimodal Integration**: LLM(GPT) 및 OpenCV 모델을 백엔드 서비스와 연동하여 비정형 데이터를 구조화하는 파이프라인 설계
+### 💻 Core Engineering Capabilities
+
+* **Data Integrity & Architecture**: 도메인 요구사항 분석 기반 정교한 **ERD 설계**, 분산 환경에서의 데이터 무결성을 보장하기 위한 트랜잭션 격리 및 락(Lock) 정책 수립[cite: 4]
+* **Performance Optimization**: 인프라 최전방 캐싱 레이어 설계, 데이터베이스 **실행 계획(EXPLAIN) 분석 및 복합 인덱스 튜닝**을 통한 병목 해소[cite: 4]
+* **Asynchronous & Distributed Processing**: 메시지 큐 기반 비동기 스로틀링 파이프라인 제어 및 분산 인메모리 카운팅 아키텍처 레이어 설계[cite: 4]
+* **Technical PM/PL Coordination**: 주도적인 크로스팀 기술 조율, Git-Flow 브랜치 전략 및 코드 리뷰 컨벤션 확립으로 팀 내 개발 생산성 개선[cite: 4]
 
 ---
 
 ### 🚀 Main Projects
 
-#### 📍 **E.Go (행사 예약 및 관리 플랫폼) | Total PM & PL**
-* **Description**: 공공데이터 및 Tour API를 연동한 실시간 대규모 행사 예약 및 관리 시스템
-* **Key Achievements**: 
-    - **DB 아키텍처 주도**: 행사, 신청, 회원 등 복합 도메인 간의 **전체 ERD 및 SQL 직접 설계**
-    - **동시성 제어**: 예약 폭주 시 데이터 무결성을 위한 **대기열(Queue) 처리 로직** 및 트랜잭션 관리 설계
-    - **데이터 운영 전략**: Soft Delete 정책을 통한 논리 삭제 및 데이터 연속성 보장 체계 수립
-    - **일정 관리**: WBS 기반 공정 관리로 프론트/백엔드 통합 개발 일정 준수 및 지연 제로화
+#### 📍 PROJECT 1. D-TO (웹 접근성 준수 쇼핑몰 플랫폼) | 종합 기여도 50%+[cite: 4]
+* **Description**: 시각·청각·고령 유저를 위한 접근성 가이드라인을 준수하면서 분산 환경의 가용성을 극대화한 커머스 플랫폼[cite: 4]
+* **Key Achievements**:
+    * **인메모리 캐싱 레이어**: 상시 노출되는 실시간 접속자 집계 기능을 **Redis Hash 구조** 기반으로 구축하여 RDB 디스크 I/O 병목 완전 차단[cite: 4]
+    * **생명주기 및 어뷰징 제어**: 탈퇴 후 중복 혜택 수령을 제한하기 위해 **Soft Delete(상태 Enum 및 deletedAt)**와 `OAuth2SuccessHandler` 내부 차단 로직을 결합한 **30일 쿨링오프** 메커니즘 전면 적용[cite: 4]
+    * **분산 인증 보안 아키텍처**: 7일 TTL 기반의 JWT 리프레시 토큰 레이어 및 로그아웃 요청 토큰을 2시간 동안 분산 캐시에 적재하는 **withdrawn 블랙리스트** 프로세스 설계[cite: 4]
+    * **품질 지표 달성**: 크롬 Lighthouse Audit 기준 웹 접근성 **100점 만점 스코어** 달성 및 아키텍처 설계 총괄[cite: 4]
 
-#### 📍 **StudySpot (맞춤형 공부 장소 추천 서비스) | Total PM & PL**
-* **Description**: 사용자 선호도와 혼잡도 통계를 기반으로 최적의 공부 장소를 추천하는 개인화 웹 서비스
-* **Key Achievements**: 
-    - **개인화 DB 설계**: 선호 키워드 및 후기 태그가 추천 점수에 반영될 수 있도록 다차원적 **ERD 설계 및 구현**
-    - **성능 최적화**: 복합 필터링 검색 시 **2초 이내 응답**을 보장하는 인덱스 설계 및 SQL 쿼리 최적화
-    - **회복 탄력성**: 외부 API 장애 시 내부 캐시 데이터를 활용하는 시스템 가용성 확보 전략 수립
-    - **통합 관리**: 운영 효율을 위한 장소 CRUD 및 신고 관리 전용 어드민 시스템 기획 및 총괄
+#### 📍 PROJECT 2. Drawing i (AI 기반 미술심리검사 보조 EMR 시스템) | 종합 기여도 30%[cite: 4]
+* **Description**: 아동의 그림 검사 과정을 정량화하고 상담사의 EMR 작성을 자동 보조하는 의료 비즈니스 인프라 플랫폼[cite: 4]
+* **Key Achievements**:
+    * **하이브리드 데이터 모델링**: 구조화된 메타데이터는 **MySQL**에, 대용량 비정형 드로잉 획(Stroke) 데이터는 NoSQL인 **MongoDB(운영 단계 Amazon DocumentDB)**에 분리 적재하여 저장소 디스크 병목 리스크 해소[cite: 4]
+    * **비정형 데이터 압축 파이프라인**: 유클리드 거리 계산 알고리즘을 이식한 데이터 전처리 레이어를 상류(Upstream)에 구현하여 외부 OpenAI API 전송 데이터 가공 및 **토큰 비용 30% 절감**[cite: 4]
+    * **비동기 격리 파이프라인**: 무거운 AI 리포트 연산 로직을 **Spring `@Async` 비동기 파이프라인**으로 격리하여 WAS 메인 비즈니스 스레드 고갈 및 장애 전파 원천 차단 (리포트 생성 속도 **40% 단축**)[cite: 4]
 
-#### 📍 **Drawing i (미술심리검사 보조 EMR 서비스)
-* **Description**: 아동의 그림검사 과정을 디지털화하고 AI 분석 리포트를 제공하는 의료 보조 플랫폼
-* **Awards**: **국민대학교 캡스톤 경진대회 장려상·인기상 수상**, EBTI 연구소 공동연구 제안
-* **Key Achievements**: 
-    - **AI 통합**: OpenCV와 GPT API를 결합하여 비정형 심리 데이터를 시각화 리포트로 자동 생성하는 구조 구축
-    - **인프라**: AWS(EC2, S3, RDS) 환경 직접 구축 및 Docker 기반 배포 환경 안정화
+#### 📍 PROJECT 3. E.Go (선착순 예약 매니징 시스템) | 백엔드 코어 구현 60%+[cite: 4]
+* **Description**: 대규모 트래픽 집중 시 데이터 정합성을 완벽하게 보장하는 분산 선착순 예약 제어 시스템[cite: 4]
+* **Key Achievements**:
+    * **비동기 대기열 버퍼 아키텍처**: 최전방에 **Apache Kafka**를 도입하여 대규모 진입 요청을 선적재하고, DB 가용량에 맞춘 순차 쓰로틀링(Consumer) 처리로 대기열 지연율 및 초과 예약률 **0% 보장**[cite: 4]
+    * **분산 환경 동시성 제어**: 다수 유저의 동일 자원 접근 시 발생하는 Race Condition을 방어하기 위해 **Redis Redisson tryLock** 기반의 분산 락 레이어를 구축하여 중복 예약 결함 제로화[cite: 4]
+    * **데이터 유실 방지**: `@SQLDelete` 및 `@Where` 애노테이션 기반의 **Soft Delete 전략**을 전면 적용하여 물리 삭제로 인한 원장 유실을 막고 통계 분석을 위한 전체 데이터 라이프사이클 이력 유실률 **0% 달성**[cite: 4]
 
-#### 📍 **D-TO (웹 접근성 준수 쇼핑몰) | Total PM & PL**
-* **Description**: 시각/청각/고령 사용자를 위한 웹 접근성 가이드라인(WAH) 준수 쇼핑몰 (진행 중)
-* **Key Achievements**: 
-    - **풀스택 아키텍처**: Zustand/React Query와 Spring Boot를 결합한 유기적인 상태 관리 및 데이터 흐름 설계
-    - **기술적 정교함**: Querydsl 기반 고성능 동적 쿼리 설계 및 AOP 기반 접근성 자동 검증 시스템 구축
+#### 📍 PROJECT 4. StudySpot (지도 기반 장소 추천 서비스) | 종합 기여도 70%+[cite: 4]
+* **Description**: 다차원 검색 필터링 및 캐시 장애 우회 가용성을 갖춘 위치 기반 개인화 서비스[cite: 4]
+* **Key Achievements**:
+    * **데이터베이스 튜닝**: 다중 조건 검색 시 발생하는 Full Scan 병목을 제거하기 위해 **MySQL EXPLAIN 실행 계획 분석**을 수행, 카디널리티 기반 **복합 인덱스 설계**로 장소 검색 API 속도 **76% 단축** ($2.5s \rightarrow 0.6s$)[cite: 4]
+    * **회복 탄력성(SLA) 확보**: 외부 지도 API 타임아웃 마비 시 시스템 장애 전파를 해소하고자 원격 서버 분리 및 **Redis 캐시 기반 Fallback 아키텍처**를 구축하여 서비스 무중단 환경 구현[cite: 4]
+    * **타입 안정성 보장**: **QueryDSL BooleanExpression** 동적 쿼리 모듈화를 도입하여 컴파일 시점 쿼리 검증 환경 내재화 (런타임 에러 **0%**)[cite: 4]
 
 ---
 
 ### 🏆 Leadership & Awards
-* **국민대학교 KCC 회장** | 150명 규모 IT 동아리 총괄 운영 및 교육 커리큘럼 설계
-* **운영 효율화** | 수기 피드백 병목 해결을 위한 **자동화 피드백 관리 시스템** 구축 및 배포
-* **장려상 & 인기상** | 국민대학교 캡스톤디자인 경진대회 (Drawing i 프로젝트)
+
+* **국민대학교 KCC 컴퓨터 학술 동아리 회장** (2024.12 - 2025.07)[cite: 4]
+    * 150명 규모 IT 조직 총괄 운영, 기술 스터디 커리큘럼 설계 및 Git-Flow 브랜치 전략·코드 컨벤션 전파로 팀 협업 생산성 **30% 향상**[cite: 4]
+    * 수기 피드백 병목을 자동화 피드백 시스템 인프라 구축으로 해결[cite: 4]
+* **국민대학교 캡스톤디자인 경진대회 장려상 & 인기상 동시 수상** (Drawing i 프로젝트)[cite: 4]
+* **임상 연구소(EBTI) 실무 협업 제안 수락** 및 비즈니스 임팩트 고도화 리드[cite: 4]
 
 ---
 
 ### 📫 Contact & More
-* **Email**: j2031414@google.com
-* **Motto**: "데이터의 흐름을 설계하고, 사람과 기술을 연결하여 조직의 성장을 이끕니다."
 
----
+* **Email**: j2031414@gmail.com[cite: 4]
+* **Github**: [github.com/kkomakk](https://github.com/kkomakk)[cite: 4]
+* **Motto**: "팀의 병목은 코드 밖에도 있습니다. 명확한 데이터와 최적화된 시스템으로 비즈니스의 성장 가치를 증명합니다."[cite: 4]
